@@ -1,0 +1,17 @@
+{
+  "name": "app",
+  "private": "true",
+  "dependencies": {
+    "@hotwired/stimulus": "^3.0.0-beta.1",
+    "@hotwired/turbo-rails": "^7.0.0-rc.3",
+    "autoprefixer": "^10.3.4",
+    "daisyui": "^1.14.0",
+    "esbuild": "^0.12.25",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.14"
+  },
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --outdir=app/assets/builds",
+    "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css"
+  }
+}

@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "2.7.2"
 
-gem "rails", path: '/Users/martijn.lafeber/sites/rails'
+gem 'rails', github: 'rails/rails', branch: 'main'
 
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 1.4"

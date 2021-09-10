@@ -1,5 +1,7 @@
-PATH
-  remote: /Users/martijn.lafeber/sites/rails
+GIT
+  remote: https://github.com/rails/rails.git
+  revision: a692e63bf4000cdeb9f230fb395c97edd3b12b99
+  branch: main
   specs:
     actioncable (7.0.0.alpha)
       actionpack (= 7.0.0.alpha)
